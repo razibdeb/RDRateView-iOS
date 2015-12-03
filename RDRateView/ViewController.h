@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RDRateView.h"
+@interface ViewController : UIViewController <RDRateViewDelegate>
 
-@interface ViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet RDRateView *myRateView;
 
 @end
 

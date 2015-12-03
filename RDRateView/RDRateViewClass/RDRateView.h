@@ -7,8 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+
+@protocol RDRateViewDelegate <NSObject>
+@optional
+-(void)rateChanged:(int)newRate;
+@end
+
+
+
 IB_DESIGNABLE
 @interface RDRateView : UIView
+
+@property (weak) IBOutlet id <RDRateViewDelegate> delegate;
+
 @property (nonatomic) IBInspectable NSInteger Items;
 @property (nonatomic) IBInspectable UIColor  * color;
 @end

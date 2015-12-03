@@ -24,4 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(void)rateChanged:(int)newRate
+{
+    NSLog(@"rate changed");
+}
 @end

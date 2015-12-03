@@ -82,7 +82,6 @@
 -(void) buttonTouched:(id) sender
 {
     UIButton * buttonTapped = (UIButton *)sender;
-    
     for (int i = 0; i <= buttonTapped.tag; i++) {
         UIButton * button = (UIButton *) [buttonArray objectAtIndex:i];
         [button setBackgroundColor:[UIColor redColor]];
@@ -91,5 +90,10 @@
         UIButton * button = (UIButton *) [buttonArray objectAtIndex:i];
         [button setBackgroundColor:[UIColor greenColor]];
     }
+    
+    if ([self.delegate respondsToSelector:@selector(rateChanged:)]) {
+        [self.delegate rateChanged:(int)buttonTapped.tag];
+    }
+    
 }
 @end
