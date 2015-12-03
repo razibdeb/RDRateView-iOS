@@ -13,6 +13,8 @@
 		6E26A5801C10A3E000E67313 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E26A57E1C10A3E000E67313 /* Main.storyboard */; };
 		6E26A5821C10A3E000E67313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E26A5811C10A3E000E67313 /* Assets.xcassets */; };
 		6E26A5851C10A3E000E67313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E26A5831C10A3E000E67313 /* LaunchScreen.storyboard */; };
+		6E26A5991C10A5E900E67313 /* RDRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E26A5971C10A5E900E67313 /* RDRateView.m */; };
+		6E26A59A1C10A5E900E67313 /* RDRateView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E26A5981C10A5E900E67313 /* RDRateView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		6E26A5811C10A3E000E67313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E26A5841C10A3E000E67313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E26A5861C10A3E000E67313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E26A5961C10A5E900E67313 /* RDRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RDRateView.h; path = RDRateViewClass/RDRateView.h; sourceTree = "<group>"; };
+		6E26A5971C10A5E900E67313 /* RDRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RDRateView.m; path = RDRateViewClass/RDRateView.m; sourceTree = "<group>"; };
+		6E26A5981C10A5E900E67313 /* RDRateView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RDRateView.xib; path = RDRateViewClass/RDRateView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		6E26A5741C10A3E000E67313 /* RDRateView */ = {
 			isa = PBXGroup;
 			children = (
+				6E26A58C1C10A4EC00E67313 /* Classes */,
 				6E26A5781C10A3E000E67313 /* AppDelegate.h */,
 				6E26A5791C10A3E000E67313 /* AppDelegate.m */,
 				6E26A57B1C10A3E000E67313 /* ViewController.h */,
@@ -77,6 +83,16 @@
 				6E26A5761C10A3E000E67313 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E26A58C1C10A4EC00E67313 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6E26A5961C10A5E900E67313 /* RDRateView.h */,
+				6E26A5971C10A5E900E67313 /* RDRateView.m */,
+				6E26A5981C10A5E900E67313 /* RDRateView.xib */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E26A59A1C10A5E900E67313 /* RDRateView.xib in Resources */,
 				6E26A5851C10A3E000E67313 /* LaunchScreen.storyboard in Resources */,
 				6E26A5821C10A3E000E67313 /* Assets.xcassets in Resources */,
 				6E26A5801C10A3E000E67313 /* Main.storyboard in Resources */,
@@ -149,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E26A5991C10A5E900E67313 /* RDRateView.m in Sources */,
 				6E26A57D1C10A3E000E67313 /* ViewController.m in Sources */,
 				6E26A57A1C10A3E000E67313 /* AppDelegate.m in Sources */,
 				6E26A5771C10A3E000E67313 /* main.m in Sources */,
