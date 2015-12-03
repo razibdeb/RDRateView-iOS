@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+IB_DESIGNABLE
 @interface RDRateView : UIView
-
+@property (nonatomic) IBInspectable NSInteger Items;
+@property (nonatomic) IBInspectable UIColor  * color;
 @end
